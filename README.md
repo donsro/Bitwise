@@ -1,5 +1,4 @@
-# Bitwise
-### Bitwise operations
+# Bitwise operations
 
  - Bitmask
  - Even and odd
