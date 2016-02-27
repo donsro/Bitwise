@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+	<meta name="description" content="Bitwise operations">
+	<meta name="author" content="Don Sro">
+	<style type="text/css">
+		code {
+			background-color: #f5f5f5;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	</style>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+		<header>
+			<nav><a href="./">Sandbox</a></nav>
+			<h1>Bitwise operations</h1>
+		</header>
+
+		<p>Please use your console to run the following javascript functions.</p>
+
+		<ul>
+			<li><strong>Bitmask.</strong> Bitwise method to filter values from 1 to 32 (1, 2, 4, 8, 16, 32).
+				Example: <code>bitmask(1|4|16)</code>, <code>bitmask(2|32)</code></li>
+			<li><strong>Even &amp; Odd.</strong> Bitwise method to define randomly selected even and odd numbers. Just run <code>evenOdd()</code> in your console.</li>
+			<li><strong>Two to the power of <em>n</em>.</strong> Delayed execution with closure and timeout. <code>powerDelayed()</code></li>
+		</ul>
+
+		<script>
+
+			function trace(msg) { console.info(msg); }
+
+			function bitmask(mask) {
+				//trace("Bitwise method to filter values.");
+				var selected = [];
+				if (mask & 1) selected.push("1"); // 1
+				if (mask & 2) selected.push("2"); // 10
+				if (mask & 4) selected.push("4"); // 100
+				if (mask & 8) selected.push("8"); // 1000
+				if (mask & 16) selected.push("16"); // 10000
+				if (mask & 32) selected.push("32"); // 100000
+				return selected;
+			}
+			//bitmask(mask); // example: bitmask(1|4|16); bitmask(2|32);
+
+			function evenOdd() {
+				//trace("Bitwise method to define randomly selected even and odd numbers.");
+				var num = Math.round( Math.random() * 1000 );
+				num & 1 ? trace(num + " Odd Number.") : trace(num + " Even Number.");
+			}
+			//evenOdd();
+
+			function powerDelayed() {
+				//trace("Two to the power of 'n' bitwise method. Delayed execution with closure and timeout.");
+				var bitMask, i;
+				for (bitMask = 1, i = 0; bitMask < 1000000; bitMask <<= 1, i++) {
+				setTimeout( function(z, x) {
+						return function(){ console.info( "2^" + x + " = " + z + " // " + z.toString(2) ); };
+					}(bitMask, i), 1000*i );
+				}
+			}
+			//powerDelayed();
+
+		</script>
+	</body>
+</html>
