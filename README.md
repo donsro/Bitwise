@@ -4,8 +4,8 @@
  - Bitmask
  - Even and odd
  - Power of x
- - 
-Demo page: http://donsro.atwebpages.com/sandbox/test-bitwise.html
+ 
+**Demo page:** http://donsro.atwebpages.com/sandbox/test-bitwise.html
 
 Browser's console is needed for demonstartion.
 
