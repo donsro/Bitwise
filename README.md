@@ -1,2 +1,11 @@
 # Bitwise
-Bitwise operations. Bitmask, even &amp; odd, power of x. 
+### Bitwise operations
+
+ - Bitmask
+ - Even and odd
+ - Power of x
+ - 
+Demo page: http://donsro.atwebpages.com/sandbox/test-bitwise.html
+
+Browser's console is needed for demonstartion.
+
