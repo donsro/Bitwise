@@ -6,5 +6,4 @@
  
 **Demo page:** http://donsro.atwebpages.com/sandbox/test-bitwise.html
 
-Browser's console is needed for demonstartion.
-
+Browser's console is needed for demonstration.
