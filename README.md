@@ -7,3 +7,6 @@
 **Demo page:** http://donsro.atwebpages.com/sandbox/test-bitwise.html
 
 Browser's console is needed for demonstration.
+
+
+ADP test
