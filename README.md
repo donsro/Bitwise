@@ -9,4 +9,4 @@
 Browser's console is needed for demonstration.
 
 
-ADP test 123
+ADP proxy test 123
